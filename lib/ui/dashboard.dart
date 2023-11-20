@@ -48,6 +48,10 @@ class _DashboardPageState extends State<DashboardPage>
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.abc_rounded),
+          onPressed: () {},
+        ),
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
