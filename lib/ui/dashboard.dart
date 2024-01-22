@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:soundboard/ui/lib/ui/NewRecording.dart';
 import 'package:soundboard/ui/tabs/faq.dart';
 import 'package:soundboard/ui/tabs/home.dart';
 import 'package:soundboard/ui/tabs/settings.dart';
@@ -49,8 +50,13 @@ class _DashboardPageState extends State<DashboardPage>
     // than having to individually change instances of widgets.
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.abc_rounded),
-          onPressed: () {},
+          child: Icon(Icons.add_rounded),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => NewRecording(), 
+            ));
+            
+          },
+
         ),
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
